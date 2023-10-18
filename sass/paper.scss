@@ -1,0 +1,24 @@
+$color-background: #eb2f64;
+div {
+     background-color: $color-background;
+}
+
+$font-size: 24px;
+ol {
+    margin: 10px 0;
+    li {
+        padding: 5px 5px;
+    }
+}
+
+//Here all list items that are inside of an ordered list will receive the given padding.
+
+@mixin hugediv($height) {
+    height: $height;
+    &:hover {
+        background-color: #F5F5F5;
+    }
+}
+#my-favorite-div {
+    @include hugediv(900px);
+}
